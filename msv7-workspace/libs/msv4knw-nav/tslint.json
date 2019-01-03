@@ -1,0 +1,7 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [true, "attribute", "msv7-workspace", "camelCase"],
+    "component-selector": [true, "element", "msv7-workspace", "kebab-case"]
+  }
+}

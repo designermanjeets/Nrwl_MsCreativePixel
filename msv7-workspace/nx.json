@@ -1,0 +1,33 @@
+{
+  "npmScope": "msv7-workspace",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "apps-msv7": {
+      "tags": ["msv7"]
+    },
+    "apps-msv7-e2e": {
+      "tags": []
+    },
+    "msv7": {
+      "tags": ["msv7"]
+    },
+    "msv7-e2e": {
+      "tags": []
+    },
+    "msv7knw": {
+      "tags": ["msv7knw"]
+    },
+    "msv7knw-e2e": {
+      "tags": []
+    },
+    "msv4knw-nav": {
+      "tags": ["shared", "navbarwithmenus"]
+    }
+  }
+}
