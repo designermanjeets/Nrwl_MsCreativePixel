@@ -1,3 +1,8 @@
-<p>
-  msv7-workspace-navbar works!
-</p>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div fxLayout="row" fxFlexFill>
+      <div fxFlex fxFlexAlign="center">Knowledge <strong>Base</strong></div>
+      <div fxFlex="30" fxLayoutGap="10px" fxFlexAlign="center"><button mat-button *ngFor="let item of links">{{item.label}}</button>
+      </div>
+    </div>
+</mat-toolbar-row>
