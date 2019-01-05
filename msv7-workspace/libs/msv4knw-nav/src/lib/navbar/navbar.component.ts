@@ -27,9 +27,8 @@ export class NavbarComponent implements OnInit {
       { label: 'Login', route: 'login', href: 'login' },
       { label: 'Contact Us', route: 'contactus', href: 'contactus' },
     ]
-    
-    console.log(this.links);
-    if( Array.isArray(this.links) && this.links.length < 1 || !this.links) { this.navbarService.addNavlinks(linksForApi); }
+  
+    if( !this.links ) { this.navbarService.addNavlinks(linksForApi) }
     
     this.navbarService.links$
     .pipe(
