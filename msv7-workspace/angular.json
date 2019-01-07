@@ -26,7 +26,10 @@
               "apps/apps/msv7/src/favicon.ico",
               "apps/apps/msv7/src/assets"
             ],
-            "styles": ["apps/apps/msv7/src/styles.scss"],
+            "styles": [
+              "apps/apps/msv7/src/styles.scss",
+              "apps/apps/msv7/src/msv7knw-theme.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -80,7 +83,9 @@
             "polyfills": "apps/apps/msv7/src/polyfills.ts",
             "tsConfig": "apps/apps/msv7/tsconfig.spec.json",
             "karmaConfig": "apps/apps/msv7/karma.conf.js",
-            "styles": ["apps/apps/msv7/src/styles.scss"],
+            "styles": [
+              "apps/apps/msv7/src/styles.scss"
+            ],
             "scripts": [],
             "assets": [
               "apps/apps/msv7/src/favicon.ico",
@@ -95,7 +100,9 @@
               "apps/apps/msv7/tsconfig.app.json",
               "apps/apps/msv7/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -121,7 +128,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/apps/msv7-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -145,8 +154,13 @@
             "main": "apps/msv7/src/main.ts",
             "polyfills": "apps/msv7/src/polyfills.ts",
             "tsConfig": "apps/msv7/tsconfig.app.json",
-            "assets": ["apps/msv7/src/favicon.ico", "apps/msv7/src/assets"],
-            "styles": ["apps/msv7/src/styles.scss"],
+            "assets": [
+              "apps/msv7/src/favicon.ico",
+              "apps/msv7/src/assets"
+            ],
+            "styles": [
+              "apps/msv7/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -200,9 +214,14 @@
             "polyfills": "apps/msv7/src/polyfills.ts",
             "tsConfig": "apps/msv7/tsconfig.spec.json",
             "karmaConfig": "apps/msv7/karma.conf.js",
-            "styles": ["apps/msv7/src/styles.scss"],
+            "styles": [
+              "apps/msv7/src/styles.scss"
+            ],
             "scripts": [],
-            "assets": ["apps/msv7/src/favicon.ico", "apps/msv7/src/assets"]
+            "assets": [
+              "apps/msv7/src/favicon.ico",
+              "apps/msv7/src/assets"
+            ]
           }
         },
         "lint": {
@@ -212,7 +231,9 @@
               "apps/msv7/tsconfig.app.json",
               "apps/msv7/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -238,7 +259,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/msv7-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -266,7 +289,9 @@
               "apps/msv7knw/src/favicon.ico",
               "apps/msv7knw/src/assets"
             ],
-            "styles": ["apps/msv7knw/src/styles.scss"],
+            "styles": [
+              "apps/msv7knw/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -320,7 +345,9 @@
             "polyfills": "apps/msv7knw/src/polyfills.ts",
             "tsConfig": "apps/msv7knw/tsconfig.spec.json",
             "karmaConfig": "apps/msv7knw/karma.conf.js",
-            "styles": ["apps/msv7knw/src/styles.scss"],
+            "styles": [
+              "apps/msv7knw/src/styles.scss"
+            ],
             "scripts": [],
             "assets": [
               "apps/msv7knw/src/favicon.ico",
@@ -335,7 +362,9 @@
               "apps/msv7knw/tsconfig.app.json",
               "apps/msv7knw/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -361,7 +390,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/msv7knw-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -394,7 +425,49 @@
               "libs/msv4knw-nav/tsconfig.lib.json",
               "libs/msv4knw-nav/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/schematics:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "msv7knw-banner": {
+      "root": "libs/msv7knw-banner",
+      "sourceRoot": "libs/msv7knw-banner/src",
+      "projectType": "library",
+      "prefix": "msv7banner",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/msv7knw-banner/tsconfig.lib.json",
+            "project": "libs/msv7knw-banner/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/msv7knw-banner/src/test.ts",
+            "tsConfig": "libs/msv7knw-banner/tsconfig.spec.json",
+            "karmaConfig": "libs/msv7knw-banner/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/msv7knw-banner/tsconfig.lib.json",
+              "libs/msv7knw-banner/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       },

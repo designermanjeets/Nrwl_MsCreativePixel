@@ -1,0 +1,7 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [true, "attribute", "msv7banner", "camelCase"],
+    "component-selector": [true, "element", "msv7banner", "kebab-case"]
+  }
+}

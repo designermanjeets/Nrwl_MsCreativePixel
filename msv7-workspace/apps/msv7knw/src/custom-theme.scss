@@ -1,0 +1,8 @@
+@import '~@angular/material/theming';
+@import '../../../libs/msv4knw-nav/src/lib/navbar/navbar-theme';
+@import '../../../libs/msv7knw-banner/src/lib/banner/banner-theme';
+
+@mixin custom-themes($theme) {
+  @include navbar-theme($theme);
+  @include banner-theme($theme);
+}

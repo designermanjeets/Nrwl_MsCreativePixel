@@ -9,12 +9,25 @@
     "importHelpers": true,
     "target": "es5",
     "module": "es2015",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["es2017", "dom"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "baseUrl": ".",
     "paths": {
-      "@msv7-workspace/msv4knw-nav": ["libs/msv4knw-nav/src/index.ts"]
+      "@msv7-workspace/msv4knw-nav": [
+        "libs/msv4knw-nav/src/index.ts"
+      ],
+      "@msv7-workspace/msv7knw-banner": [
+        "libs/msv7knw-banner/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

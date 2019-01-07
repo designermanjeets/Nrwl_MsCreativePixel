@@ -1,0 +1,31 @@
+
+
+msv7banner-banner /deep/ { 
+    background:url('./../assets/main-bg.jpg') no-repeat center center; 
+    color: #fff; 
+
+    form { 
+        margin-top: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .mat-form-field-appearance-outline {
+        width: 50%;
+        .mat-form-field-infix {
+            border-top: 0 solid transparent;
+        }
+        
+        .mat-form-field-flex { 
+            background: #fff; 
+            color: #222;
+            .mat-form-field-outline { 
+                top: 0;
+                .mat-form-field-outline-end, .mat-form-field-outline-start {
+                    border: none;
+                }
+            }
+        }
+
+    }
+    .mat-raised-button.mat-primary { width: 125px; padding: 4px 25px; border-radius: 0; vertical-align: top;margin-left: 10px; }
+}

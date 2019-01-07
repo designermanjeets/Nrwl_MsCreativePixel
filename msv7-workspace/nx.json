@@ -9,25 +9,39 @@
   },
   "projects": {
     "apps-msv7": {
-      "tags": ["msv7"]
+      "tags": [
+        "msv7"
+      ]
     },
     "apps-msv7-e2e": {
       "tags": []
     },
     "msv7": {
-      "tags": ["msv7"]
+      "tags": [
+        "msv7"
+      ]
     },
     "msv7-e2e": {
       "tags": []
     },
     "msv7knw": {
-      "tags": ["msv7knw"]
+      "tags": [
+        "msv7knw"
+      ]
     },
     "msv7knw-e2e": {
       "tags": []
     },
     "msv4knw-nav": {
-      "tags": ["shared", "navbarwithmenus"]
+      "tags": [
+        "shared",
+        "navbarwithmenus"
+      ]
+    },
+    "msv7knw-banner": {
+      "tags": [
+        "msv7bannertag"
+      ]
     }
   }
 }

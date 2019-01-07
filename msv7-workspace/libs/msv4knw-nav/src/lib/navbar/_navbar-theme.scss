@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+@mixin navbar-theme($theme) {
+  // define mixin
+  $primary: map-get($theme, primary); // retrieve color def
+  $warn: map-get($theme, warn); // retrieve color def
+  :root .mat-button {
+    // apply theme to component
+    // background-color: mat-color($warn);
+  }
+}

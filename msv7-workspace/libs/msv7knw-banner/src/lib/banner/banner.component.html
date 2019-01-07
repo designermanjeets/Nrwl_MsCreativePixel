@@ -1,0 +1,13 @@
+<div class="mat-typography" fxLayout="column" fxLayoutAlign="start center">
+
+  <h1 fxFlex class="mat-display-2">Have any Question?</h1>
+  <h3 class="title">You can ask below or enter what you are looking for!</h3>
+
+  <form #queryForm="ngForm" (ngSubmit)="onSubmit(queryForm)">
+    <mat-form-field appearance="outline">
+      <input matInput placeholder="Input" [(ngModel)]= "searchForm" name="searchForm" placeholder="Type your search terms here...">
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary" [disabled]="!queryForm.form.valid">Search</button>
+  </form>
+
+</div>

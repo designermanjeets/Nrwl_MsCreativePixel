@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+
+$msv7-theme-primary: mat-palette($mat-gray, 800);
+$msv7-theme-accent: mat-palette($mat-yellow);
+$msv7-theme-warn: mat-palette($mat-red);
+
+$msv7-theme: mat-light-theme(
+  $msv7-theme-primary,
+  $msv7-theme-accent,
+  $msv7-theme-warn
+);
+// @include angular-material-theme($msv7-theme);
+
+@import './custom-theme';
+@include custom-themes($msv7-theme);
